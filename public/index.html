@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image to Text Generator</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Logo</div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <div class="container">
+            <h1>Image to Text Generator</h1>
+            <form id="imageForm" enctype="multipart/form-data">
+                <input type="file" id="imageInput" name="image" accept="image/*" required>
+                <button type="submit">Generate Text</button>
+            </form>
+            <div id="loading" class="loading">
+                <div class="spinner"></div>
+            </div>
+            <div id="output">
+                <h2>Generated Text:</h2>
+                <textarea id="textOutput" readonly></textarea>
+            </div>
+        </div>
+    </main>
+    
+
+    <script src="./script.js"></script>
+</body>
+</html>
